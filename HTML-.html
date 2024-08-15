@@ -1,0 +1,42 @@
+HTML-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Rosa Kempinski Story Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #map { height: 400px; margin: 20px 0; }
+        #sidebar { width: 300px; float: left; margin-right: 20px; }
+        #content { float: left; max-width: 600px; }
+        .event { cursor: pointer; margin-bottom: 10px; padding: 10px; background-color: #f4f4f4; border-radius: 5px; }
+        .event:hover { background-color: #e0e0e0; }
+        .clear { clear: both; }
+    </style>
+</head>
+<body>
+
+    <h1>Visiting Villa Rosa Kempinski</h1>
+
+    <div id="sidebar">
+        <div class="event" id="deluxe-suite">Deluxe Suite</div>
+        <div class="event" id="la-rosa-restaurant">La Rosa Restaurant</div>
+        <div class="event" id="spa-center">Spa Center</div>
+        <!-- Add more events here -->
+    </div>
+
+    <div id="content">
+        <p>Click on an event to explore more about Villa Rosa Kempinski.</p>
+        <div id="map"></div>
+    </div>
+
+    <div class="clear"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="storymap.js"></script>
+
+</body>
+</html>
+
